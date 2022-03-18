@@ -63,7 +63,7 @@ int main (int argc, char *argv[])
 }
 
 int busca_binaria(int vetor[TAM_C], int chave){
-  int i,pos_ini,pos_fim,k;
+  int i,pos_ini,pos_fim;
   pos_ini = 0;
   pos_fim = TAM_C-1;
   while(pos_ini<pos_fim){
