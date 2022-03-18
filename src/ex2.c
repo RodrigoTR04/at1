@@ -66,7 +66,7 @@ int busca_binaria(int vetor[TAM_C], int chave){
   int i,pos_ini,pos_fim;
   pos_ini = 0;
   pos_fim = TAM_C-1;
-  while(pos_ini<pos_fim){
+  while(pos_ini<=pos_fim){
     i = pos_ini + (pos_fim-pos_ini)/2;
     if(vetor[i]==chave){
       return i;
