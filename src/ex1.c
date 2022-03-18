@@ -56,16 +56,7 @@ int le_vetor(int vetor[MAX_ARR]) {
     } 
     vetor[i] = a;
   }
-  /* do
-  {
-    scanf("%i", &a);
-    if (a == -100)
-    {
-      break;
-    }
-    vetor[i] = a;
-    i += 1;
-  } while (i < MAX_ARR); */
+  
   return i;
 }
 

@@ -43,17 +43,25 @@ int verifica_ordenacao(int vetor[TAM_C]) {
   return -1;
 }
 
-int busca_linear(int vetor[TAM_C], int chave) {
+int busca_linear(int vetor[TAM_C], int chave){
 }
 
-void le_matriz(int matriz[TAM_L][TAM_C]) {
+void le_matriz(int matriz[TAM_L][TAM_C]){
+  int i, j, a;
+  for(i=0;i<TAM_L;i++){
+    printf("Digite a linha %i: ",i);
+    for(j=0;j<TAM_C;j++){
+      scanf("%i",&a);
+      matriz[i][j] = a;
+    }
+  }
 }
 
-void exibe_matriz(int matriz[TAM_L][TAM_C]) {
+void exibe_matriz(int matriz[TAM_L][TAM_C]){
   printf("[");
-  for (int i = 0; i < TAM_L; ++i) { 
+  for (int i = 0; i < TAM_L; ++i){ 
     printf("[");
-    for (int j = 0; j < TAM_C; ++j) {
+    for (int j = 0; j < TAM_C; ++j){
       printf("%i", matriz[i][j]);
       if( j < TAM_C - 1) printf(", ");
     }
