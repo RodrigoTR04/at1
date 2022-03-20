@@ -83,19 +83,13 @@ int busca_binaria(int vetor[TAM_C], int chave){
 }
 
 int verifica_ordenacao(int vetor[TAM_C]) {
-  int i,ordem;
+  int i;
   for(i=0;i<TAM_C;i++){
-    if(vetor[i]<vetor[i+1]){
-      ordem = 1;
-    }
-    else{
+    if(vetor[i]>vetor[i+1]){
       return 0;
     }
   }
-  if(ordem==1){
-    return 1;
-  }
-  return 0;
+  return 1;
 }
 
 int busca_linear(int vetor[TAM_C], int chave){
